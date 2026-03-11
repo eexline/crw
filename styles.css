@@ -49,6 +49,24 @@ body {
   line-height: 1.5;
 }
 
+/* Hide global scrollbar while keeping scroll */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 /* Instant tap feedback (mobile-style) */
 .tap-press {
   opacity: 0.88 !important;
